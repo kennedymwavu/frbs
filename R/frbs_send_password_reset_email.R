@@ -12,6 +12,7 @@
 #'      - `message`: Error message
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-send-password-reset-email)
 #' for more details
+#' @export
 frbs_send_password_reset_email <- \(email) {
   url_path <- "/v1/accounts:sendOobCode"
   data <- list(email = email, requestType = "PASSWORD_RESET")

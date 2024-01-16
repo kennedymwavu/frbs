@@ -17,6 +17,7 @@
 #'      - `message`: Error message
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-create-email-password)
 #' for more details
+#' @export
 frbs_sign_up <- \(email, password) {
   url_path <- "/v1/accounts:signUp"
   data <- list(email = email, password = password, returnSecureToken = TRUE)

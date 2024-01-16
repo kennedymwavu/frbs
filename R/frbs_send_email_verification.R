@@ -12,6 +12,7 @@
 #'      - `message`: Error message
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-send-email-verification)
 #' for more details
+#' @export
 frbs_send_email_verification <- \(id_token) {
   url_path <- "/v1/accounts:sendOobCode"
   data <- list(idToken = id_token, requestType = "VERIFY_EMAIL")

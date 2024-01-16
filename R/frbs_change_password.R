@@ -20,6 +20,7 @@
 #'      - `message`: Error message
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-change-password)
 #' for more details
+#' @export 
 frbs_change_password <- \(id_token, password) {
   url_path <- "/v1/accounts:update"
   data <- list(

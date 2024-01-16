@@ -35,6 +35,7 @@
 #' user_data <- frbs_get_user_data("<id_token>")
 #' lapply(user_data, `[[`, 1)
 #' }
+#' @export
 frbs_get_user_data <- \(id_token) {
   url_path <- "/v1/accounts:lookup"
   data <- list(idToken = id_token)

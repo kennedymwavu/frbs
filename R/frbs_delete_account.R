@@ -11,6 +11,7 @@
 #'      - `message`: Error message
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-delete-account)
 #' for more details
+#' @export
 frbs_delete_account <- \(id_token) {
   url_path <- "/v1/accounts:delete"
   data <- list(idToken = id_token)

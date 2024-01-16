@@ -19,6 +19,7 @@
 #'      - `message`: Error message
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-refresh-token)
 #' for more details
+#' @export
 frbs_exchange_refresh_token <- \(refresh_token) {
   url_path <- "/v1/token"
   data <- list(refresh_token = refresh_token, grant_type = "refresh_token")
