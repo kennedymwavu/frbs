@@ -30,10 +30,16 @@ remotes::install_github("kennedymwavu/frbs")
 ## Usage
 
 1.  Create a [Firebase project](https://console.firebase.google.com/).
+
 2.  Grab the project’s API key and place it in your `.Renviron` as
     `FIREBASE_API_KEY`:
-    `r     FIREBASE_API_KEY = Your-API-Key-Goes-Here`
+
+    ``` r
+    FIREBASE_API_KEY = Your-API-Key-Goes-Here
+    ```
+
 3.  Restart your R session.
+
 4.  Connect to your frontend.
 
 Functions in the package are named similarly to the descriptions in the

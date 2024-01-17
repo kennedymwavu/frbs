@@ -40,6 +40,7 @@ remotes::install_github("kennedymwavu/frbs")
 
 1. Create a [Firebase project](https://console.firebase.google.com/).
 2. Grab the project's API key and place it in your `.Renviron` as `FIREBASE_API_KEY`:
+
     ```r
     FIREBASE_API_KEY = Your-API-Key-Goes-Here
     ```
