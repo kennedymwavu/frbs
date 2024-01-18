@@ -12,7 +12,8 @@ frbs_get_user_data(id_token)
 \value{
 A named list with the following items:
 \itemize{
-\item \code{users}:
+\item \code{users}: A list of length 1 which contains a nested named list with the
+following items:
 \itemize{
 \item \code{localId}: The uid of the current user.
 \item \code{email}: The email of the account.
