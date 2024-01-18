@@ -2,7 +2,8 @@
 #'
 #' @param id_token String. The Firebase ID token of the account.
 #' @return A named list with the following items:
-#' - `users`:
+#' - `users`: A list of length 1 which contains a nested named list with the
+#'    following items:
 #'    - `localId`: The uid of the current user.
 #'    - `email`: The email of the account.
 #'    - `emailVerified`: Whether or not the account's email has been verified.
