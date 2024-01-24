@@ -64,7 +64,8 @@ These are the exported ones:
 
 ## Examples
 
-Coming Soon!
+Examples are provided
+[here](https://github.com/kennedymwavu/frbs-examples).
 
 ## Related projects
 
