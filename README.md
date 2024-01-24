@@ -9,15 +9,16 @@
 R wrapper for [Firebase Authentication REST
 API](https://firebase.google.com/docs/reference/rest/auth).
 
+Designed to be used on the backend of your R applications, whether web
+or non-web.
+
 `{frbs}` enables you to integrate Firebase Authentication services
 seamlessly into your projects, allowing for user authentication, account
 management, and other authentication-related tasks.
 
-It is designed to be used on the backend of your applications. This
-flexibility allows you to build the login & registration pages using
-whichever framework you wish eg.
-[ambiorix](https://github.com/devOpifex/ambiorix),
-[shiny](https://github.com/rstudio/shiny) etc.
+Suitable if you need absolute full control on how you build & customize
+your login & registration process/pages, while still using Firebase
+Auth.
 
 ## Installation
 
