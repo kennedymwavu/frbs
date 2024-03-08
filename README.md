@@ -55,6 +55,7 @@ These are the exported ones:
 - `frbs_sign_in(email, password)`: Sign in a user with email & password.
 - `frbs_send_password_reset_email(email)`: Send password reset email.
 - `frbs_change_password(id_token, password)`: Change user password.
+- `frbs_update_profile(id_token, ...)`: Update user profile.
 - `frbs_delete_account(id_token)`: Delete user account.
 - `frbs_get_user_data(id_token)`: Get user data from firebase.
 - `frbs_exchange_custom_token(token)`: Exchange custom token for an ID
