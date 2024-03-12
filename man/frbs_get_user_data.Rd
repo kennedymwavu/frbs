@@ -34,14 +34,6 @@ logged in at.
 created at.
 \item \code{customAuth}: Whether the account is authenticated by the developer.
 }
-\item \code{error}: See Details.
-}
-}
-\description{
-Get user data from firebase
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -49,11 +41,16 @@ Get user data from firebase
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Get user data from firebase
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-get-account-info}{Firebase Auth REST API docs}
 for more details
-}
-}
-}
 }
 \examples{
 \dontrun{

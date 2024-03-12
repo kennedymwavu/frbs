@@ -22,14 +22,6 @@ contain "providerId" and "federatedId".
 \item \code{idToken}:	New Firebase Auth ID token for user.
 \item \code{refreshToken}:	A Firebase Auth refresh token.
 \item \code{expiresIn}:	string	The number of seconds in which the ID token expires.
-\item \code{error}: See Details.
-}
-}
-\description{
-Change password
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -37,9 +29,28 @@ Change password
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Change password
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-change-password}{Firebase Auth REST API docs}
 for more details
 }
-}
+\examples{
+\dontrun{
+# first sign in user and get the 'id_token':
+user <- frbs_sign_in(email = "user@gmail.com", password = "password")
+id_token <- user$idToken
+
+# change password:
+response <- frbs_change_password(
+  id_token = id_token,
+  password = "new-user-password"
+)
+response
 }
 }

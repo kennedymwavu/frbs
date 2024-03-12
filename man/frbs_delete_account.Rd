@@ -12,14 +12,6 @@ frbs_delete_account(id_token)
 \value{
 A named list with the following items:
 \itemize{
-\item \code{error}: See Details.
-}
-}
-\description{
-Delete account
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -27,9 +19,25 @@ Delete account
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Delete account
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-delete-account}{Firebase Auth REST API docs}
 for more details
 }
-}
+\examples{
+\dontrun{
+# first sign in user and get the 'id_token':
+user <- frbs_sign_in(email = "user@gmail.com", password = "password")
+id_token <- user$idToken
+
+# delete user account:
+response <- frbs_delete_account(id_token = id_token)
+response
 }
 }

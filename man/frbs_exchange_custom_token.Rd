@@ -16,14 +16,6 @@ A named list with the following items:
 \item \code{idToken}:	A Firebase Auth ID token generated from the provided custom token.
 \item \code{refreshToken}:	A Firebase Auth refresh token generated from the provided custom token.
 \item \code{expiresIn}:	The number of seconds in which the ID token expires.
-\item \code{error}: See Details.
-}
-}
-\description{
-Exchanges a custom Auth token for an ID and refresh token
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -31,9 +23,14 @@ Exchanges a custom Auth token for an ID and refresh token
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Exchanges a custom Auth token for an ID and refresh token
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-verify-custom-token}{Firebase Auth REST API docs}
 for more details
-}
-}
-}
 }

@@ -35,14 +35,6 @@ contain "providerId" and "federatedId".
 \item \code{idToken}:	New Firebase Auth ID token for user.
 \item \code{refreshToken}:	A Firebase Auth refresh token.
 \item \code{expiresIn}:	string	The number of seconds in which the ID token expires.
-\item \code{error}: See Details.
-}
-}
-\description{
-Update a user's profile (display name / photo URL).
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -50,9 +42,28 @@ Update a user's profile (display name / photo URL).
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Update a user's profile (display name / photo URL).
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-update-profile}{Firebase Auth REST API docs}
 for more details
 }
-}
+\examples{
+\dontrun{
+frbs_update_profile(
+  id_token = "id-token-goes-here",
+  display_name = "new-user-display-name",
+  photo_url = "url-to-user-photo"
+)
+
+# to delete the display name attribute:
+frbs_update_profile(
+  delete_attribute = "DISPLAY_NAME"
+)
 }
 }

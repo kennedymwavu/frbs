@@ -19,14 +19,6 @@ refresh token.
 \item \code{id_token}: A Firebase Auth ID token.
 \item \code{user_id}: The uid corresponding to the provided ID token.
 \item \code{project_id}: Your Firebase project ID.
-\item \code{error}: See Details.
-}
-}
-\description{
-Refreshes a Firebase ID token
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -34,9 +26,25 @@ Refreshes a Firebase ID token
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Refreshes a Firebase ID token
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-refresh-token}{Firebase Auth REST API docs}
 for more details
 }
-}
+\examples{
+\dontrun{
+# first sign in user and get the 'refresh_token':
+user <- frbs_sign_in(email = "user@gmail.com", password = "password")
+refresh_token <- user$refreshToken
+
+# exchange the refresh token:
+response <- frbs_exchange_refresh_token(refresh_token = refresh_token)
+response
 }
 }

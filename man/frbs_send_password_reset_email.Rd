@@ -13,14 +13,6 @@ frbs_send_password_reset_email(email)
 A named list with the following items:
 \itemize{
 \item \code{email}: Users' email address.
-\item \code{error}: See Details.
-}
-}
-\description{
-Send password reset email
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -28,9 +20,19 @@ Send password reset email
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Send password reset email
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-send-password-reset-email}{Firebase Auth REST API docs}
 for more details
 }
-}
+\examples{
+\dontrun{
+frbs_send_password_reset_email("user-email-goes-here")
 }
 }

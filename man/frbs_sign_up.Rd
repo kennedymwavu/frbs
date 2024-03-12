@@ -19,14 +19,6 @@ A named list with the following items:
 \item \code{refreshToken}: A Firebase Auth refresh token for the newly created user.
 \item \code{expiresIn}: The number of seconds in which the ID token expires.
 \item \code{localId}: The uid of the newly created user.
-\item \code{error}: See Details.
-}
-}
-\description{
-Sign up with email/password
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -34,9 +26,19 @@ Sign up with email/password
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Sign up with email/password
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-create-email-password}{Firebase Auth REST API docs}
 for more details
 }
-}
+\examples{
+\dontrun{
+frbs_sign_up(email = "new-user-email", password = "strong-password")
 }
 }
