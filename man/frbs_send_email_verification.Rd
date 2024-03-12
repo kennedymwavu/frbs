@@ -13,14 +13,6 @@ frbs_send_email_verification(id_token)
 A named list with the following items:
 \itemize{
 \item \code{email}: The email of the account.
-\item \code{error}: See Details.
-}
-}
-\description{
-Send email verification
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -28,9 +20,19 @@ Send email verification
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Send email verification
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-send-email-verification}{Firebase Auth REST API docs}
 for more details
 }
-}
+\examples{
+\dontrun{
+frbs_send_email_verification("id-token-goes-here")
 }
 }

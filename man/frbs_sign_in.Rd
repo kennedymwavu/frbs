@@ -20,14 +20,6 @@ A named list with the following items:
 \item \code{expiresIn}: The number of seconds in which the ID token expires.
 \item \code{localId}: The uid of the authenticated user.
 \item \code{registered}: Whether the email is for an existing account.
-\item \code{error}: See Details.
-}
-}
-\description{
-Sign in a user with email & password
-}
-\details{
-\itemize{
 \item \code{error}:
 \itemize{
 \item \code{NULL} if no error code in response
@@ -35,9 +27,19 @@ Sign in a user with email & password
 \itemize{
 \item \code{code}: Error code
 \item \code{message}: Error message
+}
+}
+}
+}
+\description{
+Sign in a user with email & password
+}
+\details{
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password}{Firebase Auth REST API docs}
 for more details
 }
-}
+\examples{
+\dontrun{
+frbs_sign_in(email = "user-email", password = "strong-password")
 }
 }
