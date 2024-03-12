@@ -18,15 +18,27 @@
 #' - `idToken`:	New Firebase Auth ID token for user.
 #' - `refreshToken`:	A Firebase Auth refresh token.
 #' - `expiresIn`:	string	The number of seconds in which the ID token expires.
-#' - `error`: See Details.
-#' @details
 #' - `error`:
 #'    - `NULL` if no error code in response
 #'    - A list of 2 if response was an error:
 #'      - `code`: Error code
 #'      - `message`: Error message
-#' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-update-profile)
+#' @details
+#'  Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-update-profile)
 #' for more details
+#' @examples
+#' \dontrun{
+#' frbs_update_profile(
+#'   id_token = "id-token-goes-here",
+#'   display_name = "new-user-display-name",
+#'   photo_url = "url-to-user-photo"
+#' )
+#'
+#' # to delete the display name attribute:
+#' frbs_update_profile(
+#'   delete_attribute = "DISPLAY_NAME"
+#' )
+#' }
 #' @export
 frbs_update_profile <- \(
   id_token,

@@ -22,13 +22,12 @@
 #'    - `createdAt`: The timestamp, in milliseconds, that the account was
 #'        created at.
 #'    - `customAuth`: Whether the account is authenticated by the developer.
-#' - `error`: See Details.
-#' @details
 #' - `error`:
 #'    - `NULL` if no error code in response
 #'    - A list of 2 if response was an error:
 #'      - `code`: Error code
 #'      - `message`: Error message
+#' @details
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-get-account-info)
 #' for more details
 #' @examples

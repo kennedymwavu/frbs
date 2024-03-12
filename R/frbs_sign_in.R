@@ -9,15 +9,18 @@
 #' - `expiresIn`: The number of seconds in which the ID token expires.
 #' - `localId`: The uid of the authenticated user.
 #' - `registered`: Whether the email is for an existing account.
-#' - `error`: See Details.
-#' @details
 #' - `error`:
 #'    - `NULL` if no error code in response
 #'    - A list of 2 if response was an error:
 #'      - `code`: Error code
 #'      - `message`: Error message
+#' @details
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password)
 #' for more details
+#' @examples
+#' \dontrun{
+#' frbs_sign_in(email = "user-email", password = "strong-password")
+#' }
 #' @export
 frbs_sign_in <- \(email, password) {
   url_path <- "/v1/accounts:signInWithPassword"
