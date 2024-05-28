@@ -55,6 +55,7 @@ These are the exported ones:
 - `frbs_sign_in(email, password)`: Sign in a user with email & password.
 - `frbs_sign_in_anonymously()`: Sign in a user anonymously.
 - `frbs_send_password_reset_email(email)`: Send password reset email.
+- `frbs_change_email(id_token, email)`: Change user email.
 - `frbs_change_password(id_token, password)`: Change user password.
 - `frbs_update_profile(id_token, ...)`: Update user profile.
 - `frbs_delete_account(id_token)`: Delete user account.
