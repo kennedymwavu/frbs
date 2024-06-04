@@ -1,11 +1,13 @@
-url: https://mwavu.com/frbs/
+url: http://mwavu.com/frbs/
 template:
   bootstrap: 5
   bootswatch: zephyr
   theme: breeze-light
 navbar:
   structure:
-    right: [github, twitter]
+    right:
+    - github
+    - twitter
   components:
     github:
       icon: fa-github
@@ -18,4 +20,9 @@ navbar:
   bg: dark
 home:
   sidebar:
-    structure: [license, citation, authors, dev]
+    structure:
+    - license
+    - citation
+    - authors
+    - dev
+
