@@ -1,0 +1,21 @@
+url: https://mwavu.com/frbs/
+template:
+  bootstrap: 5
+  bootswatch: zephyr
+  theme: breeze-light
+navbar:
+  structure:
+    right: [github, twitter]
+  components:
+    github:
+      icon: fa-github
+      href: https://github.com/kennedymwavu/frbs
+      aria-label: github
+    twitter:
+      icon: fa-twitter
+      href: https://x.com/kennedymwavu
+      aria-label: twitter
+  bg: dark
+home:
+  sidebar:
+    structure: [license, citation, authors, dev]
