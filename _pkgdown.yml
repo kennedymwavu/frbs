@@ -1,4 +1,4 @@
-url: ~
+url: https://mwavu.com/frbs/
 template:
   bootstrap: 5
   bootswatch: zephyr
@@ -16,3 +16,6 @@ navbar:
       href: https://x.com/kennedymwavu
       aria-label: twitter
   bg: dark
+home:
+  sidebar:
+    structure: [license, citation, authors, dev]
