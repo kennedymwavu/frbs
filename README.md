@@ -9,16 +9,15 @@
 R wrapper for [Firebase Authentication REST
 API](https://firebase.google.com/docs/reference/rest/auth).
 
-Designed to be used on the backend of your R applications, whether web
-or non-web.
+Designed to be used on the backend of your R applications & APIs.
 
 `{frbs}` enables you to integrate Firebase Authentication services
 seamlessly into your projects, allowing for user authentication, account
 management, and other authentication-related tasks.
 
-Suitable if you need absolute full control on how you build & customize
-your login & registration process/pages, while still using Firebase
-Auth.
+Suitable if you need **absolute full control** on how you build &
+customize your login & registration process/pages, while still using
+Firebase Auth.
 
 ## Installation
 
@@ -50,20 +49,20 @@ they all have the prefix `frbs_`.
 
 These are the exported ones:
 
-- `frbs_sign_up(email, password)`: Sign up user with email/password.
-- `frbs_send_email_verification(id_token)`: Send email verification.
-- `frbs_sign_in(email, password)`: Sign in a user with email & password.
+- `frbs_sign_up()`: Sign up user with email/password.
+- `frbs_send_email_verification()`: Send email verification.
+- `frbs_sign_in()`: Sign in a user with email & password.
 - `frbs_sign_in_anonymously()`: Sign in a user anonymously.
-- `frbs_send_password_reset_email(email)`: Send password reset email.
-- `frbs_change_email(id_token, email)`: Change user email.
-- `frbs_change_password(id_token, password)`: Change user password.
-- `frbs_update_profile(id_token, ...)`: Update user profile.
-- `frbs_delete_account(id_token)`: Delete user account.
-- `frbs_get_user_data(id_token)`: Get user data from firebase.
-- `frbs_exchange_custom_token(token)`: Exchange custom token for an ID
-  and refresh token.
-- `frbs_exchange_refresh_token(refresh_token)`: Exchange a refresh token
-  for an ID token.
+- `frbs_send_password_reset_email()`: Send password reset email.
+- `frbs_change_email()`: Change user email.
+- `frbs_change_password()`: Change user password.
+- `frbs_update_profile()`: Update user profile.
+- `frbs_delete_account()`: Delete user account.
+- `frbs_get_user_data()`: Get user data from firebase.
+- `frbs_exchange_custom_token()`: Exchange custom token for an ID and
+  refresh token.
+- `frbs_exchange_refresh_token()`: Exchange a refresh token for an ID
+  token.
 
 ## Examples
 
