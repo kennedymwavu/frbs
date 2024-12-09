@@ -8,7 +8,8 @@
 
 ------------------------------------------------------------------------
 
-⚠️ This repo is now archived because of \#17. Please use
+⚠️ This repo is now archived because of
+[\#17](https://github.com/kennedymwavu/frbs/issues/17). Please use
 [{firebase.auth.rest}](https://github.com/kennedymwavu/firebase.auth.rest).⚠️
 
 ------------------------------------------------------------------------
