@@ -6,6 +6,13 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
+------------------------------------------------------------------------
+
+⚠️ This repo is now archived because of \#17. Please use
+[{firebase.auth.rest}](https://github.com/kennedymwavu/firebase.auth.rest).⚠️
+
+------------------------------------------------------------------------
+
 R wrapper for [Firebase Authentication REST
 API](https://firebase.google.com/docs/reference/rest/auth).
 
